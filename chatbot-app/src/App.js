@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import './App.css';
+import './styles.css';
 import ChatBot from './ChatBot';
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Chat With Cass</h1>
-        <ChatBot />
       </header>
+      <ChatBot />
     </div>
   );
 }
