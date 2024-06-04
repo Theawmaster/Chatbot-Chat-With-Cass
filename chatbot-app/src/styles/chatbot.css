@@ -1,0 +1,28 @@
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: auto;
+    height: calc(100vh - 90px);
+  }
+  
+  .chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .chat-box p {
+    margin: 10px 0;
+  }
+  

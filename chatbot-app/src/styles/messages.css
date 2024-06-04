@@ -1,0 +1,45 @@
+.userText, .botText {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userText {
+    justify-content: flex-end;
+  }
+  
+  .botText {
+    justify-content: flex-start;
+  }
+  
+  .userText span, .botText span {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .userText span {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .botText span {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+  }
+  
+  @keyframes floatup {
+    from {
+      transform: translateY(14px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  .userText span, .botText span {
+    animation: floatup 0.5s forwards;
+  }
+  
