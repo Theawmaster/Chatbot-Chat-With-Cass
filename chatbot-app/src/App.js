@@ -1,7 +1,10 @@
 // src/App.js
 import React from 'react';
-import './styles.css';
-import ChatBot from './ChatBot';
+import './styles/header.css';
+import './styles/chatbot.css';
+import './styles/messages.css';
+import './styles/input.css';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (

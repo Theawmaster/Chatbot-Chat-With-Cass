@@ -1,8 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
-import './styles.css';
-import { getBotResponse } from './getBotResponse';
-import chatbotIcon from './assets/chatbot-icon.webp';
+import '../styles/base.css';
+import '../styles/header.css';
+import '../styles/chatbot.css';
+import '../styles/messages.css';
+import '../styles/input.css';
+import { getBotResponse } from '../utils/getBotResponse';
+import chatbotIcon from '../assets/images/chatbot-icon.webp';
 
 function ChatBot() {
   const chatBoxRef = useRef(null); // Create a ref for the chat box
@@ -52,9 +56,9 @@ function ChatBot() {
 
   function firstBotMessage() {
     let firstMessage = `
-      Hi my name is Cass, how may I help you?
-      These are the prompts you can try:
-      "game", "hello", "who are you", "joke" and type "help" for more guided prompts!
+    Hi my name is Cass, how may I help you?
+    These are the prompts you can try:
+    "game", "hello", "who are you", "joke" and type "help" for more guided prompts!
     `;
     const botStarterMessage = document.getElementById('botStarterMessage');
     if (botStarterMessage) {
