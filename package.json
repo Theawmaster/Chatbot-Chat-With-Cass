@@ -2,7 +2,7 @@
   "name": "chatbot-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://theawmaster.github.io/chatbot-app",
+  "homepage": "https://theawmaster.github.io/Chatbot-Chat-With-Cass",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
