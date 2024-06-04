@@ -1,8 +1,8 @@
-// src/ChatBot.js
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import './styles.css';
 import { getBotResponse } from './getBotResponse';
+import chatbotIcon from './assets/chatbot-icon.webp';
 
 function ChatBot() {
   const chatBoxRef = useRef(null); // Create a ref for the chat box
@@ -51,7 +51,11 @@ function ChatBot() {
   }
 
   function firstBotMessage() {
-    let firstMessage = 'Hi my name is Cass, how may I help you?';
+    let firstMessage = `
+      Hi my name is Cass, how may I help you?
+      These are the prompts you can try:
+      "game", "hello", "who are you", "joke" and type "help" for more guided prompts!
+    `;
     const botStarterMessage = document.getElementById('botStarterMessage');
     if (botStarterMessage) {
       botStarterMessage.innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
@@ -65,14 +69,14 @@ function ChatBot() {
     }
   }
 
-  function getHardResponse(userText) {
-    let botResponse = getBotResponse(userText);
+  async function getHardResponse(userText) {
+    let botResponse = await getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $('#chatbox').append(botHtml);
     scrollToBottom();
   }
 
-  function getResponse() {
+  async function getResponse() {
     let userText = $('#textInput').val().trim();
     if (userText === '') return; // Prevent sending empty messages
 
@@ -81,9 +85,7 @@ function ChatBot() {
     $('#chatbox').append(userHtml);
     scrollToBottom();
 
-    setTimeout(() => {
-      getHardResponse(userText);
-    }, 1000);
+    await getHardResponse(userText);
   }
 
   function buttonSendText(sampleText) {
@@ -105,6 +107,10 @@ function ChatBot() {
 
   return (
     <div className="outer-container">
+      <header>
+        <img src={chatbotIcon} alt="Chatbot Icon" className="chatbot-icon" />
+        <h1>Chat with Cass</h1>
+      </header>
       <div className="chat-container">
         <div className="chat-box" id="chatbox" ref={chatBoxRef}>
           <div id="botStarterMessage"></div>
