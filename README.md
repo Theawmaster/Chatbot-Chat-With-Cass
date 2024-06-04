@@ -1,6 +1,5 @@
 # Chatbot Chat with Cass
 
-![Chatbot Icon](./src/assets/images/chatbot-icon.png)
 
 Chatbot Chat with Cass is a React-based chatbot application named Cass. It helps users interact with AI in a friendly and intuitive manner.
 
