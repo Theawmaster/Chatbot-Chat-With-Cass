@@ -9,32 +9,14 @@ Visit the deployed application [here](https://theawmaster.github.io/Chatbot-Chat
 
 ## Features
 
-- Interactive chatbot with predefined responses.
-- Simple and clean user interface.
-- Deployed on GitHub Pages.
-
-## Installation
-
-Follow these steps to get a local copy up and running:
-
-### Prerequisites
-
-- Node.js and npm installed. Download from [nodejs.org](https://nodejs.org/).
-
-### Setup
-
-1. Clone the repository:
-- git clone https://github.com/theawmaster/Chatbot-Chat-With-Cass.git
-
-2. Navigate to the project directory:
-- cd Chatbot-Chat-With-Cass
-
-3. install npm packages:
-- npm install
-
-### Usage
-
-#### Run development server : npm start
+- **Interactive Chatbot**: Cass responds to user inputs with predefined responses.
+- **User-Friendly Interface**: Clean and simple design for ease of use.
+- **Dynamic Responses**: Cass can handle a variety of prompts, providing relevant responses.
+- **Real-time Interaction**: Instant feedback and conversation flow.
+- **Time and Date Responses**: Cass can tell the current time and date.
+- **Fun Interactions**: Includes fun features like jokes and simple games (e.g., rock, paper, scissors).
+- **Emergency Information**: Provides important emergency contact information.
+- **Open Links**: Can open popular websites like Facebook, YouTube, and Google on command.
 
 ## Acknowledgements
 ### - React
